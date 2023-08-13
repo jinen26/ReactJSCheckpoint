@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f5f9f0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #28666e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #28666e;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav a:hover {
+  color: #bad2b7;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; 
+  margin-bottom: 20px;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+   
+    /* Existing 
+
+  header {
+    background-color: #28666e;
   }
-  to {
-    transform: rotate(360deg);
+
+  .video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  
+
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
+
+  h1 {
+    font-size: 36px;
+    margin-top: 30px;
+    color: #28666e;
+  }
+
+  main {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .intro {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+#white {
+  color:#28666e;
+}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom:100px;
+  }
+
+  .box1,
+  .box2,
+.box3{
+    color: #fff;
+    background-color: #28666e;
+    font-size: 15px;
+    width: 48%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .box2 {
+    background-color: #bad2b7;
+    margin-right:30px;
+    margin-left:30px;
+  }
+  .box1 h1,.box3 h1{
+color:whitesmoke;
+  }
+
+  #title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #28666e;
+    color: #fff;
+  }
+  .greeno{
+    background-color:#bad2b7 ;
+  }
+#lo{
+color:aliceblue;
+}
+#lop{
+color:green;
 }
